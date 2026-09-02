@@ -1,0 +1,92 @@
+:root {
+  --bg: #f3f5f2;
+  --surface: #ffffff;
+  --surface-2: #f7f9f6;
+  --border: #e2e7e1;
+  --text: #35413a;
+  --text-strong: #16201a;
+  --muted: #6d7871;
+  --accent: #0e9f6e;
+  --accent-strong: #0a8057;
+  --accent-soft: #e4f4ec;
+  --accent-border: #c2e4d5;
+  --danger: #d94b4b;
+  --danger-soft: #fdeeee;
+  --danger-border: #f2cccc;
+  --warning: #c67b16;
+  --warning-soft: #fcf2e0;
+  --warning-border: #efd9ad;
+  --info: #3d6df0;
+  --info-soft: #eaf0fe;
+  --shadow-sm: 0 1px 2px rgba(20, 35, 28, 0.06);
+  --shadow-md: 0 10px 30px rgba(20, 35, 28, 0.14);
+
+  color-scheme: light;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
